@@ -1,5 +1,7 @@
 site_name: CMS RPC Docs
 # site_url: https://example.com/
+repo_url: https://github.com/ftorresd/cms_rpc_documentation
+edit_uri: edit/main/docs/
 nav:
     - Home: index.md
     - DOC Instructions: doc_instructions
