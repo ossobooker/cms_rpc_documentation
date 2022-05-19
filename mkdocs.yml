@@ -2,14 +2,22 @@ site_name: CMS RPC Docs
 # site_url: https://example.com/
 repo_url: https://github.com/ftorresd/cms_rpc_documentation
 edit_uri: edit/main/docs/
-nav:
-    - Home: index.md
-    - DOC Instructions: doc_instructions
-    - RPC Supervisor: online_sofware
-    - DCS: DCS
-    - Contacts and Links: contacts_and_links
+# nav:
+#   - Home: index.md
+#   - DOC Instructions: doc_instructions
+#   - RPC Supervisor: 
+#     - Tips and Tricks: online_sofware/tips_and_tricks.md
+#   - DCS: DCS
+#   - Contacts and Links: contacts_and_links
+
 theme:
   name: material
+  custom_dir: custom_theme/
+
+  # 404 page
+  static_templates:
+    - 404.html
+
   logo: assets/rpc.svg
   palette:
     - scheme: slate 
