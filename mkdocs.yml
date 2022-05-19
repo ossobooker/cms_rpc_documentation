@@ -1,0 +1,55 @@
+site_name: CMS RPC Docs
+# site_url: https://example.com/
+nav:
+    - Home: index.md
+    - DOC Instructions: doc_instructions
+    - RPC Supervisor: online_sofware
+    - DCS: DCS
+    - Contacts and Links: contacts_and_links
+theme:
+  name: material
+  logo: assets/rpc.svg
+  palette:
+    - scheme: slate 
+      primary: pink
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+    - scheme: default
+      primary: pink
+      toggle:
+        icon: material/toggle-switch 
+        name: Switch to dark mode
+  features:
+    - navigation.tracking
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - toc.follow
+    - toc.integrate
+    - navigation.top
+plugins:
+  - git-revision-date
+  - search
+  - bibtex:
+      bib_file: "docs/refs.bib"
+
+markdown_extensions:
+  - footnotes
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
